@@ -3,14 +3,35 @@ import NavigationLinks from './components/NavigationLinks/NavigationLinks';
 import AllMeals from './components/AllMeals/AllMeals';
 import CompareMeals from './components/CompareMeals/CompareMeals';
 
-function App() {
-  return (
-    <div className="App">
-      <NavigationLinks />
-      <AllMeals />
-      <CompareMeals />
-    </div>
-  );
+class App extends React.Component {
+  constructor(){
+    super();
+
+    this.selectSection = this.selectSection.bind(this);
+    this.state = {
+      displayAll: true,
+      displayCompare: false,
+      meals: {}
+    }
+  }
+
+  selectSection(displayAll, displayCompare) {
+    // ensure only 1 section will be displayed
+    displayAll = !displayCompare;
+
+    this.setState({ displayAll })
+    this.setState({ displayCompare })
+  }
+
+  render() {
+    return (
+      <div className="App">
+        <NavigationLinks selectSection={this.selectSection} />
+        {this.state.displayAll && <AllMeals />}
+        {this.state.displayCompare && <CompareMeals />}
+      </div>
+    );
+  }
 }
 
 export default App;

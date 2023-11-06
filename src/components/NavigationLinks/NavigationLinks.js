@@ -5,20 +5,14 @@ import './NavigationLinks.css';
 class NavigationLinks extends React.Component {
   displayOnlyAllMeals(event){
     event.preventDefault();
-    // display: flex AllMeals
-    // display: none CompareMeals
-    // put a display state 
-    console.log('display all')
-    return 1
+    // change the display state with: allMeal is true, compareMeal is false
+    this.props.selectSection(true, false);
   }
 
   displayOnlyCompareMeals(event){
     event.preventDefault();
-    // display: none AllMeals
-    // display: flex CompareMeals
-    // put a display state 
-    console.log('display compare')
-    return 2
+    // change the display state with: allMeal is false, compareMeal is true
+    this.props.selectSection(false, true);
   }
   
   render(){
