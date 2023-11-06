@@ -28,7 +28,7 @@ class App extends React.Component {
     return (
       <div className="App">
         <NavigationLinks selectSection={this.selectSection} />
-        {this.state.displayAll && <AllMeals />}
+        {this.state.displayAll && <AllMeals meals={this.state.meals} />}
         {this.state.displayCompare && <CompareMeals />}
       </div>
     );

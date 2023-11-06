@@ -1,6 +1,29 @@
 .all-meals {
-  background-color: blue;
+  background-color: #FFFFE0;
   display: flex;
   min-height: calc(100vh - 104px);
   width: 100%;
+}
+
+.left-part {
+  margin-left: 100px;
+}
+
+ul {
+  padding: 0;
+}
+
+.meal {
+  border-top: black 2px solid;
+  cursor: pointer;
+  display: block;
+  padding: 10px 0;
+}
+
+.meal:last-of-type {
+  border-bottom: black 2px solid;
+}
+
+.meal.selected {
+  background-color: #FFD580;
 }
