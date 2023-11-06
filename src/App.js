@@ -2,6 +2,7 @@ import React from 'react';
 import NavigationLinks from './components/NavigationLinks/NavigationLinks';
 import AllMeals from './components/AllMeals/AllMeals';
 import CompareMeals from './components/CompareMeals/CompareMeals';
+import sampleMeals from './sample-meals';
 
 class App extends React.Component {
   constructor(){
@@ -11,7 +12,7 @@ class App extends React.Component {
     this.state = {
       displayAll: true,
       displayCompare: false,
-      meals: {}
+      meals: sampleMeals
     }
   }
 
