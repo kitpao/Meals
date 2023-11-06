@@ -9,7 +9,13 @@ class MealsDisplay extends React.Component {
         <p>Click on the meal to see more details</p>
         <ul>
           {Object.keys(this.props.meals).map(
-            key => <Meal key={key} details={this.props.meals[key]} />
+            key => <Meal
+                      key={key}
+                      details={this.props.meals[key]}
+                      displaySpecificMeal={this.props.displaySpecificMeal}
+                      value={key}
+                      selectedMeal={this.props.selectedMeal}
+                    />
           )}
         </ul>
       </section>
