@@ -1,6 +1,22 @@
-# Getting Started with Create React App
+# Objective
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Develop a simple frontend app with ReactJS.
+
+Based on pure description of concepts and usability, we want you
+to imagine the best approach to a user-friendly interface where
+you’ll need to develop a solution for the next case scenario.
+
+You are a software developer for the food industry, your job is
+to evaluate the best meal in the city! (at least 3).
+Cooking time, ingredients, calories and score (given by diners)
+are the known data
+
+Make sure to display each meal’s information and in a different
+section show the comparisons.
+Feel free to make the comparisons that you think are useful for
+this task, to add more data, and the use of any open source
+software to create graphs, modals, etc.
+
 
 ## Available Scripts
 
