@@ -7,9 +7,10 @@
 
 .left-part {
   margin-left: 100px;
+  max-width: fit-content;
 }
 
-ul {
+.left-part ul {
   padding: 0;
 }
 
@@ -25,5 +26,21 @@ ul {
 }
 
 .meal.selected {
-  background-color: #FFD580;
+  background-color: #FF9947;
+}
+
+.right-part {
+  align-items: center;
+  background-color: #FF9947;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  margin-bottom: 18px;
+  margin-right: 100px;
+  margin-top: 110px;
+  padding: 10px 50px;
+}
+
+.ingredients {
+  text-align: center;
 }

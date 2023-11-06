@@ -1,6 +1,7 @@
 import React from 'react';
 import './AllMeals.css';
 import MealsDisplay from '../MealsDisplay';
+import MealDescription from '../MealDescription';
 
 class AllMeals extends React.Component {
   constructor(){
@@ -26,9 +27,7 @@ class AllMeals extends React.Component {
           displaySpecificMeal={this.displaySpecificMeal}
           selectedMeal={this.state.selectedMealKey}
         />
-        { /* Right Side Component for meal description */ }
-        <p>{ console.log(selectedMealInfo) }</p>
-        { /* Complete Selected Meal info */ }
+        { this.state.selectedMealKey !== "" && <MealDescription info={selectedMealInfo} />}
       </section>
     );
   }
