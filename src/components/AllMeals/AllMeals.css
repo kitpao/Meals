@@ -1,0 +1,6 @@
+.all-meals {
+  background-color: blue;
+  display: flex;
+  min-height: calc(100vh - 104px);
+  width: 100%;
+}
